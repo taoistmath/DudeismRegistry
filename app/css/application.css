@@ -417,14 +417,19 @@ h4, .h4, .sort-menu h2, .notes-header h1 {
   font-size: 110%; }
 
 a {
-  color: #0F6A85;
+  color: #7e6191;
   text-decoration: none; }
   a:hover, a:focus {
-    color: #148fb3; }
+    font-weight: bold;
+    color: #7e6191; }
 
 img {
   height: auto;
   max-width: 100%; }
+
+.a .usersite {
+  color:919191;
+}
 
 .bucket--flag {
   display: table; }
@@ -499,7 +504,7 @@ img {
   margin-bottom: 0; }
 
 .card-link {
-  color: #0F6A85; }
+  color: #7e6191; }
 
 .card:hover .card-hidden {
   overflow: hidden; }
@@ -690,9 +695,9 @@ img {
   z-index: 30; }
 
 .dropdown:hover .dropdown-btn {
-  color: #fff; }
+  color: #7e6191; }
   .dropdown:hover .dropdown-btn::after {
-    color: #fff; }
+    color: #7e6191; }
 .dropdown:hover .dropdown-menu {
   -webkit-transition: opacity 0.3s ease-in-out, top 0.3s ease-in-out;
   transition: opacity 0.3s ease-in-out, top 0.3s ease-in-out;
@@ -756,14 +761,14 @@ img {
     bottom: auto; }
 
 .hero {
-  min-height: 320px;
-  background-color: #000000;
-  background-image: url("../images/note-wrangler-hero.jpg");
+  min-height: 93px;
+  background-color: #7E6191;
+  background-image: url("../images/new-dudeism-header2_05.png");
   background-position: center;
   background-repeat: no-repeat; }
 
 .hero-wrapper {
-  background-color: #000000; }
+  background-color: #7E6191; }
 
 .hero-cover {
   background-image: url("../images/hero-cover.jpg");
@@ -989,7 +994,7 @@ i.icon.after {
 
 .nav-list .list-item {
   border-bottom: none;
-  color: #0F6A85;
+  color: #7e6191;
   display: inline;
   margin-right: 0.75em; }
   .nav-list .list-item:last-child {
@@ -997,11 +1002,12 @@ i.icon.after {
   .nav-list .list-item:hover, .nav-list .list-item:focus, .nav-list .list-item:active {
     background: none;
     border-bottom: none;
-    color: #148fb3; }
+    color: #7e6191; }
   .nav-list .list-item.active {
+    font-weight: bold;
     background: none;
     border-bottom: none;
-    color: #148fb3; }
+    color: #7e6191; }
 
 .new-note-container {
   text-align: left; }

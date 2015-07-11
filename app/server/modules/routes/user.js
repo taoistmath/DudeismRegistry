@@ -1,7 +1,8 @@
 var models = require('../models');
 var User = models.User;
 var Note = models.Note;
-var userSafeParams = ['id', 'name', 'username', 'bio', 'twitter_handle', 'site'];
+// var userSafeParams = ['id', 'name', 'username', 'bio', 'twitter_handle', 'site', 'geo', 'donation', 'ordcert', 'ordyear', 'avatar'];
+var userSafeParams = ['id', 'name', 'username', 'avatar', 'ordcert', 'ordyear', 'bio', 'geo', 'donation', 'twitter_handle', 'site'];
 
 module.exports = function(app){
   app.get('/users', function(req, res){

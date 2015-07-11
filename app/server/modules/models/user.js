@@ -11,7 +11,12 @@ module.exports = function(sequelize, DataTypes) {
     name: DataTypes.STRING,
     username: DataTypes.STRING,
     password: DataTypes.STRING,
+    avatar: DataTypes.STRING,
+    ordcert: DataTypes.STRING,
+    ordyear: DataTypes.INTEGER,
     bio: DataTypes.STRING,
+    geo: DataTypes.STRING,
+    donation: DataTypes.INTEGER,
     twitter_handle: DataTypes.STRING,
     site: DataTypes.STRING
   });

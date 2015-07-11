@@ -1,8 +1,25 @@
 <div class="card">
-  <img ng-src='{{gravatarUrl(user)}}'/>
+  <img ng-src={{user.avatar}} width='200'/>
   <h1 class="user-name">{{user.name}}</h1>
+  <h3>Ordained Since</h3>
+  <p>{{user.ordyear}}</p>
+
   <h3>Bio</h3>
   <p>{{user.bio}}</p>
+
+  <h3>Geographic Region</h3>
+  <p>{{user.geo}}</p>
+
+  <h3>Website</h3>
+  <a href={{user.site}} target="_blank">{{user.site}}</a>
+  <p>
+
+  <h3>Ordination Certificate</h3>
+  <a href={{user.ordcert}} target="_blank"><img src={{user.ordcert}} width='250px'/></a>
+  <p>
+
+  <h3>Requested Donation</h3>
+  <p>{{ user.donation | currency}}</p>
 
   <h3>Notes</h3>
   <div>

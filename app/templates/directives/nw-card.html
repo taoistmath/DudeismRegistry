@@ -1,7 +1,7 @@
 <div class="card" title="{{header}}">
 
-  <img ng-src='{{image}}' ng-if='image'>
-
+  <img ng-src="{{image}}" width='200'/>
+  
   <div ng-if='icon'>
     <i class="icon icon-card {{icon}}"></i>
   </div>
@@ -13,6 +13,7 @@
   </p>
 
   <div class="card-hidden">
-    <a ng-href='#/notes/{{id}}' ng-bind-html="body"></a>
+    <p>Year of Ordination:</p>
+    <a ng-href='#/users/{{id}}' ng-bind-html="body"></a>
   </div>
 </div>

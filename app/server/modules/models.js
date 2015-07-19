@@ -18,19 +18,29 @@ var sequelize = new Sequelize('note_wrangler', 'username', 'password', {
 
 var User = sequelize.import(__dirname + "/models/user");
 var Note = sequelize.import(__dirname + "/models/note");
+var Resource = sequelize.import(__dirname + "/models/resource");
 var Category = sequelize.import(__dirname + "/models/category");
 
 // Set user/note associations
 User.hasMany(Note);
 Note.belongsTo(User);
 
-// Set note/note type associations
+// Set user/resource associations
+User.hasMany(Resource);
+Resource.belongsTo(User);
+
+// Set category/note type associations
 Category.hasMany(Note);
 Note.belongsTo(Category);
+
+// Set category/resource type associations
+Category.hasMany(Resource);
+Resource.belongsTo(Category);
 
 module.exports = {
   User: User,
   Note: Note,
+  Resource: Resource,
   Category: Category,
   sequelize: sequelize
 }

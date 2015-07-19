@@ -8,12 +8,18 @@
 
   <h2 class="h3">{{header}}</h2>
 
+  <div ng-if='reslink'>
+    <a ng-href='reslink' ng-bind-html="reslink">{{link}}</a>
+  </div>
+
   <p class="card-type">
     {{type}}
   </p>
 
   <div class="card-hidden">
-    <p>Year of Ordination:</p>
+    <div ng-if='ordyear'>
+      <p>Year of Ordination:</p>
+    </div>
     <a ng-href='#/users/{{id}}' ng-bind-html="body"></a>
   </div>
 </div>

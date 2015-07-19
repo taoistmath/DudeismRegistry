@@ -14,5 +14,6 @@ require('./routes/user')(app); //user routes
 require('./routes/session')(app); // session routes, mostly for authentication
 require('./routes/note')(app); // note routes
 require('./routes/category')(app); // category routes
+require('./routes/resource')(app); // resource routes
 
 module.exports = app;

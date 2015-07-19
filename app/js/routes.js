@@ -46,5 +46,25 @@ angular.module('NoteWrangler').config(['$routeProvider', function($routeProvider
       controller: 'ProfileEditController'
     })
 
+    .when('/resources', {
+      templateUrl: 'templates/pages/resources/index.html',
+      controller: 'ResourcesIndexController'
+    })
+
+    .when('/resources/new', {
+      templateUrl: 'templates/pages/resources/edit.html',
+      controller: 'ResourcesCreateController'
+    })
+    
+    .when('/resources/:id', {
+      templateUrl: 'templates/pages/resources/show.html',
+      controller: 'ResourcesShowController'
+    })
+    
+    .when('/resources/:id/edit', {
+      templateUrl: 'templates/pages/resources/edit.html',
+      controller: 'ResourcesEditController'
+    })
+    
     .otherwise({redirectTo: '/'});
 }]);

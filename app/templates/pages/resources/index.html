@@ -1,0 +1,25 @@
+<div class="note-wrapper">
+  <div class="note-content">
+    <div class="notes-header">
+      <h1 title="Resources">Resources</h1>
+      <a class="btn-b" href='#/resources/new' ng-if='loggedIn'>
+        <i class="icon add"></i>
+        New Resource
+      </a>
+    </div>
+    <div class="note-wrapper">
+      <p ng-show="resource">Nothing here to show you, friend.</p>
+      <a class="card-notes" ng-repeat="resource in resources" ng-href="#/resources/{{resource.id}}">
+
+        <nw-card header="resource.title"
+                 body="resource.description"
+                 link = "resource.link"
+                 id="resource.id"
+                 type="{{resource.noteType.name}}"></nw-card>
+      </a>
+    </div>
+  </div>
+
+  <nw-category-select active-category='current' resources='resources'></nw-category-select>
+
+</div>

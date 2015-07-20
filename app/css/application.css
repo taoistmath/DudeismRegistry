@@ -507,7 +507,7 @@ img {
   color: #7e6191; }
 
 .card:hover .card-hidden {
-  overflow: hidden; }
+  overflow: auto; }
 
 .hero-content, .main-wrapper, .nav-content, .new-note-container {
   margin-left: auto;
@@ -794,29 +794,14 @@ i.icon.icon-card {
   color: #0F6A85;
   font-size: 360%; }
 
-i.icon.code:before {
-  content: ""; }
-
 i.icon.edit.sign:before {
   content: ""; }
 
 i.icon.edit:before {
   content: ""; }
 
-i.icon.tumblr.sign:before {
-  content: ""; }
-
-i.icon.tumblr:before {
-  content: ""; }
-
-i.icon.pencil:before {
-  content: ""; }
-
 i.icon.terminal:before {
   content: ""; }
-
-i.icon.lightbulb:before {
-  content: ""; }
 
 i.icon.warning:before {
   content: ""; }
@@ -838,6 +823,18 @@ i.icon.user:before {
 
 i.icon.settings:before {
   content: ""; }
+
+i.icon.bell::before {
+    content: "";
+}
+
+i.icon.umbrella::before {
+    content: "";
+}
+
+i.icon.coffee::before {
+    content: "";
+}
 
 /* left side icons */
 i.icon.left {
@@ -1027,4 +1024,13 @@ i.icon.after {
 .user-name {
   color: #0F6A85; }
 
-/*# sourceMappingURL=application.css.map */
+.bio-header {
+  color: #7e6191;
+  text-align: left;
+}
+
+.bio {
+  color: #7e6191;
+  text-align: left;
+  font-size: 12px;
+}

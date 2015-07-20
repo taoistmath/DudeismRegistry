@@ -12,7 +12,7 @@ angular.module('NoWrangler')
   return function(resourcesInput, titleSearch, category) {
     var resource, categoryMatches, titleMatches;
     var result = [];
-te
+
     for(var i=0, l = resourcesInput.length; i < l; i++) {
       resource = resourcesInput[i];
 

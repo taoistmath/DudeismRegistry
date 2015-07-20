@@ -1,10 +1,12 @@
 <div class="users-wrapper">
   <a class="card-users" ng-repeat="user in users | filter:search" ng-href="#/users/{{user.id}}">
-    <nw-card card-title="user.name" 
+    <nw-card header="user.name" 
 		     image="user.avatar" 
-		     body="user.ordyear"
 		     ordyear="user.ordyear"
 		     id="user.id" 
-		     type="{{user.username}}"></nw-card>
+		     type="{{user.username}}"
+		     bio="user.bio"
+		     geo="user.geo"
+		     donation="user.donation"></nw-card>
   </a>
 </div>

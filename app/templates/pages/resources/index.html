@@ -12,10 +12,10 @@
       <a class="card-notes" ng-repeat="resource in resources" ng-href="#/resources/{{resource.id}}">
 
         <nw-card header="resource.title"
-                 body="resource.description"
+                 descrip="resource.description"
                  link = "resource.link"
                  id="resource.id"
-                 type="{{resource.noteType.name}}"></nw-card>
+                 type="{{resource.resourceType.name}}"></nw-card>
       </a>
     </div>
   </div>

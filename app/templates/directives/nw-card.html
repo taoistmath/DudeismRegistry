@@ -8,18 +8,30 @@
 
   <h2 class="h3">{{header}}</h2>
 
-  <div ng-if='reslink'>
-    <a ng-href='reslink' ng-bind-html="reslink">{{link}}</a>
-  </div>
-
-  <p class="card-type">
-    {{type}}
-  </p>
-
   <div class="card-hidden">
     <div ng-if='ordyear'>
-      <p>Year of Ordination:</p>
+      <a ng-href='#/users/{{id}}'>
+        <h3 class="bio-header">Ordained Since:</h3>
+        <p class="bio">{{ordyear}}</p>
+
+        <h3 class="bio-header">Bio:</h3>
+        <p class="bio">{{bio}}</p>
+
+        <h3 class="bio-header">Geographic Region:</h3>
+        <p class="bio">{{geo}}</p>
+
+        <h3 class="bio-header">Requested Donation:</h3>
+        <p class="bio">{{ donation | currency}}</p>
+
+      </a>
     </div>
-    <a ng-href='#/users/{{id}}' ng-bind-html="body"></a>
+    <div ng-if='link'>
+      <a ng-href='#/resources/{{id}}'>
+        <p class="bio">{{descrip}}</p>
+      </a>
+    </div>
+
+    <p>Click for more Information</p>
+    
   </div>
 </div>

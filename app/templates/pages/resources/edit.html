@@ -1,0 +1,31 @@
+<div class="new-resource">
+  <div class="new-note-container">
+    <ul class='errors' ng-if="errors">
+      <li ng-repeat="error in errors">{{error}}</li>
+    </ul>
+
+    <form class="form">
+      <fieldset class="form-field">
+        <label class="form-label" for="title">Title</label>
+        <input class="form-input" name="title" ng-model="resource.title" />
+      </fieldset>
+
+      <fieldset class="form-field">
+        <label class="form-label" for="category">Category</label>
+        <select name='category' ng-model='resource.CategoryId' ng-options='category.id as category.name for category in categories'></select>
+      </fieldset>
+
+      <fieldset class="form-field">
+        <label class="form-label" for="link">Link</label>
+        <input class="form-input" name="link" ng-model="resource.link" />
+      </fieldset>
+
+      <fieldset class="form-field">
+        <label class="form-label" for="description">Description</label>
+        <textarea class="form-input" name="description" ng-model="resource.description" placeholder="A short description of this resource"></textarea>
+      </fieldset>
+
+      <button class="btn" ng-click="updateResource(resource)" ng-disabled="updating">{{updating ? 'Saving...' : 'Save'}}</button>
+    </form>
+  </div>
+</div>

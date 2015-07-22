@@ -9,7 +9,13 @@ angular.module('NoteWrangler')
       image: "=",
       icon: "@",
       id: "=",
-      type: "@"
+      type: "@",
+      link: "=",
+      ordyear: "=",
+      bio: "=",
+      geo: "=",
+      donation: "=",
+      descrip: "="
     },
     templateUrl: "templates/directives/nw-card.html",
     link: function(scope, element) {

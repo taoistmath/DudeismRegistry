@@ -3,7 +3,6 @@ var Note = models.Note;
 var User = models.User;
 var Category = models.Category;
 var noteSafeParams = ["id", "link","description","title","icon","content", "userId", 'CategoryId'];
-// var userSafeParams = ['id', 'name', 'username', 'bio', 'twitter_handle', 'site', 'geo', 'donation', 'ordcert', 'ordyear', 'avatar'];
 var userSafeParams = ['id', 'name', 'username', 'avatar', 'ordcert', 'ordyear', 'bio', 'geo', 'donation', 'twitter_handle', 'site'];
 
 module.exports = function(app) {

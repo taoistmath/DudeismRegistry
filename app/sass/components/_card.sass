@@ -73,6 +73,17 @@ $card-boxShadow: 0 2px 0 rgba(#000, 0.15) !default
   @extend %grid-box-m--1of3
   @extend %grid-box-l--1of4
 
+.card-resources
+  @extend %grid-box
+  @extend %grid-box-1of1
+  @extend %grid-box-m--1of2
+  min-height: 150px
+  .card
+    height: 150px
+
+.card-resources:nth-of-type(2n+1)
+  clear: left
+
 .card-type
   color: $c-text
   font-size: $b-fontSize-m

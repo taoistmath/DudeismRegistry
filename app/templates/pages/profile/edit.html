@@ -24,6 +24,36 @@
         <input class="form-input" name="passwordConfirm" ng-model="user.passwordConfirm" placeholder='password confirm' />
       </fieldset>
 
+       <fieldset class="form-field">
+        <label class="form-label" for="avatar">Profile Pic</label>
+        <textarea class="form-input" name="avatar"  ng-model="user.avatar" placeholder="Link to uploaded profile pic"></textarea>
+      </fieldset>
+
+      <fieldset class="form-field">
+        <label class="form-label" for="ordcert">Ordination Certificate</label>
+        <textarea class="form-input" name="ordcert"  ng-model="user.ordcert" placeholder="Link to your ord cert"></textarea>
+      </fieldset>
+
+       <fieldset class="form-field">
+        <label class="form-label" for="ordyear">Year of Ordination</label>
+        <textarea class="form-input" name="ordyear"  ng-model="user.ordyear" placeholder="Year of Ordination"></textarea>
+      </fieldset>
+
+      <fieldset class="form-field">
+        <label class="form-label" for="bio">Bio</label>
+        <textarea class="form-input" name="bio"  ng-model="user.bio" placeholder="Tell us a little about yourself."></textarea>
+      </fieldset>
+
+      <fieldset class="form-field">
+        <label class="form-label" for="geo">Geographic Area</label>
+        <textarea class="form-input" name="geo"  ng-model="user.geo" placeholder="What geographic area(s) are you available to perform services in?"></textarea>
+      </fieldset>
+
+      <fieldset class="form-field">
+        <label class="form-label" for="donation">Donation</label>
+        <textarea class="form-input" name="donation"  ng-model="user.donation" placeholder="Donation Amount"></textarea>
+      </fieldset>
+
       <fieldset class="form-field">
         <label class="form-label" for="twitter_handle">Twitter name</label>
         <input class="form-input" name="twitter_handle" ng-model="user.twitter_handle" placeholder='Twitters' />
@@ -34,12 +64,7 @@
         <input class="form-input" name="site" ng-model="user.site" placeholder="I don't have a site :(" />
       </fieldset>
 
-      <fieldset class="form-field">
-        <label class="form-label" for="bio">Bio</label>
-        <textarea class="form-input" name="bio"  ng-model="user.bio" placeholder="Tell us a little about yourself."></textarea>
-      </fieldset>
-
-      <button class="btn" ng-click="updateUser(user)" ng-disabled="updating">{{updating ? 'Saving...' : 'Save'}}</button>
+     <button class="btn" ng-click="updateUser(user)" ng-disabled="updating">{{updating ? 'Saving...' : 'Save'}}</button>
     </form>
   </div>
 </div>

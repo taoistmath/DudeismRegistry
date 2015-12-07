@@ -5,7 +5,8 @@ angular.module('NoteWrangler')
     restrict: "E",
     scope: {
       activeCategory: "=",
-      notes: "="
+      notes: "=",
+      resources: "="
     },
     controller: function($scope) {
       this.getActiveCategory = function(){
@@ -24,6 +25,21 @@ angular.module('NoteWrangler')
         var count = 0;
         for(var i=0, l = $scope.notes.length; i < l; i++ ) {
           if($scope.notes[i].category.id === category.id) {
+            count++;
+          }
+        }
+
+        return count;
+      }
+      
+      this.getResourcesCountForCategory = function(category) {
+        if(!$scope.resources) {
+          return 0;
+        }
+
+        var count = 0;
+        for(var i=0, l = $scope.resources.length; i < l; i++ ) {
+          if($scope.resources[i].category.id === category.id) {
             count++;
           }
         }

@@ -16,8 +16,12 @@ angular.module('NoteWrangler')
         nwCategorySelectCtrl.setActiveCategory(scope.category);
       }
 
-      scope.categoryCount = function() {
+      scope.categoryCountNote = function() {
         return nwCategorySelectCtrl.getNotesCountForCategory(scope.category);
+      }
+
+      scope.categoryCountResource = function() {
+        return nwCategorySelectCtrl.getResourcesCountForCategory(scope.category);
       }
 
       scope.makeInactive = function(evt){

@@ -3,7 +3,7 @@ var LocalStrategy = require('passport-local').Strategy;
 var encrypt = require('../encrypt');
 var models = require('../models');
 var User = models.User;
-var userSafeParams = ['id', 'name', 'username', 'bio', 'twitter_handle', 'site'];
+var userSafeParams = ['id', 'name', 'username', 'avatar', 'ordcert', 'ordyear', 'bio', 'geo', 'donation', 'twitter_handle', 'site'];
 
 // Since we're using sequelize, we need to specify how passport (the auth library)
 // serializes and deserializes users. In this case we just save the user.id at the

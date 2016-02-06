@@ -375,8 +375,8 @@ th {
   box-sizing: border-box; }
 
 html {
-  background: #171b1f;
-  color: #919191;
+  background: #b8c5b4;
+  color: #7e6191;
   font-family: sans-serif;
   font-size: 16px;
   line-height: 1.5; }
@@ -403,7 +403,7 @@ h4, .h4, .sort-menu h2, .notes-header h1 {
   margin-top: 0; }
 
 h1, .h1 {
-  color: #12a9d5;
+  color: #7e6191;
   font-size: 170%;
   text-transform: uppercase; }
 
@@ -452,7 +452,7 @@ img {
     max-width: none; }
 
 .card, .card-hidden, .dropdown-menu, .registration, .new-note-container {
-  background: #F7F9FA;
+  background: #e1e5de;
   border-radius: 3px;
   box-shadow: 0 2px 0 rgba(0, 0, 0, 0.15);
   padding: 1.25em;
@@ -472,7 +472,7 @@ img {
   min-height: 150px; }
 
 .card--b, .sort-menu .card {
-  background: #22282e; }
+  background: #e1e5de; }
 
 .card--center, .registration {
   left: 50%;
@@ -609,7 +609,7 @@ img {
   padding: 0; }
 
 .list-item {
-  border-bottom: 1px solid #171b1f;
+  border-bottom: 1px solid #e9dbd4;
   color: #4d5b68;
   cursor: pointer;
   display: block;
@@ -643,7 +643,7 @@ img {
   padding: 0 1.25em; }
 
 .main-wrapper {
-  background: #171b1f; }
+  background: #b8c5b4; }
 
 .well, .main-wrapper {
   margin-bottom: 1.25em;
@@ -663,7 +663,7 @@ img {
 
 .btn, .btn-b {
   display: inline-block;
-  background: #0F6A85;
+  background: #7e6191;
   padding: 0.3125em 0.625em;
   border: none;
   color: #F7F9FA;
@@ -671,7 +671,7 @@ img {
   font-size: 90%; }
   .btn:hover, .btn:focus, .btn-b:hover, .btn-b:focus {
     color: #F7F9FA;
-    background: #127c9c; }
+    background: #8b6e9e; }
 
 .btn--s {
   line-height: 2.5;
@@ -763,7 +763,7 @@ img {
 .hero {
   min-height: 93px;
   background-color: #7E6191;
-  background-image: url("../images/new-dudeism-header2_05.png");
+  background-image: url("../images/DRL-b8c5b4.png");
   background-position: center;
   background-repeat: no-repeat; }
 
@@ -771,8 +771,8 @@ img {
   background-color: #7E6191; }
 
 .hero-cover {
-  background-image: url("../images/hero-cover.jpg");
-  background-size: cover; }
+  background-image: url("../images/DudeismLogo.png");
+  background-repeat: repeat; }
 
 @font-face {
   font-family: "Icons";
@@ -869,14 +869,14 @@ i.icon.after {
 .sort-menu .card {
   text-align: left; }
 .sort-menu h2 {
-  color: #12a9d5;
+  color: #7e6191;
   display: inline-block;
   margin-bottom: 0.9375em;
   text-transform: uppercase; }
 
 .sort-menu-item {
-  border-bottom: 1px solid #171b1f;
-  color: #4d5b68;
+  border-bottom: 1px solid #b8c5b4;
+  color: #7e6191;
   cursor: pointer;
   display: block;
   font-style: italic;
@@ -885,11 +885,11 @@ i.icon.after {
     margin-bottom: 0;
     border-bottom: none; }
   .sort-menu-item:hover, .sort-menu-item:focus, .sort-menu-item:active {
-    background: #2d343c;
-    color: #0F6A85; }
+    background: #d4dad0;
+    color: #7e6191; }
   .sort-menu-item.active {
-    background: #2d343c;
-    color: #0F6A85; }
+    background: #d4dad0;
+    color: #7e6191; }
 
 .tooltip {
   position: absolute;
@@ -1022,7 +1022,7 @@ i.icon.after {
     display: inline-block; }
 
 .user-name {
-  color: #0F6A85; }
+  color: #7e6191; }
 
 .bio-header {
   color: #7e6191;
